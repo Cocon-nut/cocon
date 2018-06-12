@@ -1,0 +1,14 @@
+p {
+  font-family: Lora;
+  font-size: 120%;
+}
+
+.round {
+  border-radius: 100px;
+  border: 0px solid rgb(58, 59, 58);
+  box-shadow: 0 0 7px #666;
+}
+
+.title {
+  margin: 30px auto;
+}

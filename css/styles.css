@@ -12,3 +12,25 @@ p {
 .title {
   margin: 30px auto;
 }
+#slider {
+  width: 926px;
+  height: 128px;
+  border: 5px solid black;
+  overflow: hidden;
+  margin: 50px auto;
+}
+#polosa {
+  width: 896px;
+  position: relative;
+}
+.pic {
+  position: absolute;
+}
+#polosa img {
+  float: left;
+}
+#polosa::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -42,3 +42,34 @@ function f2() {
   mas.pop();
   show();
 }
+
+// document.getElementById("slider-left").onclick = sliderLeft;
+autoSlider();
+var left = 0;
+var timer;
+
+function autoSlider() {
+  timer = setTimeout(sliderLeft, 1000);
+}
+
+function sliderLeft() {
+  var polosa = document.getElementsByClassName("pic");
+
+  for (var i = 0; i < 7; i++) {
+    var left = polosa[i].style.left;
+    left = parseInt(left.replace(/\D+/g, ""));
+
+    if (left === 0 || !left) left = 128 * 7;
+    left = left - 128;
+
+    polosa[i].style.left = left + "px";
+  }
+
+  if (left < -896) {
+    left = 0;
+    polosa.style.left = -128 + "px";
+    clearTimeout = timer;
+  }
+
+  autoSlider();
+}

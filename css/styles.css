@@ -34,3 +34,17 @@ p {
   display: block;
   clear: both;
 }
+#rotatable {
+  -o-transition: transform 3s linear;
+  -ms-transition: transform 3s linear;
+  -moz-transition: transform 3s linear;
+  -webkit-transition: transform 3s linear;
+  transition: transform 3s linear;
+}
+/* .rotatable:hover {
+  -o-transform: rotate(1turn);
+  -ms-transform: rotate(1turn);
+  -moz-transform: rotate(1turn);
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+} */

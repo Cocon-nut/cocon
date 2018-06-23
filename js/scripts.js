@@ -73,3 +73,10 @@ function sliderLeft() {
 
   autoSlider();
 }
+var ugol = 0;
+function povorot() {
+  ugol = ugol + 360;
+
+  document.getElementById("rotatable").style.transform =
+    "rotate(" + ugol + "deg)";
+}
